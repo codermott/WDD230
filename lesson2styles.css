@@ -1,0 +1,24 @@
+.gridarea {
+    display: grid;
+	grid-template-columns: repeat2, 1fr;
+    font-size: .8rem;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    
+}
+.first, .second, .third {
+    display: grid;
+    border: 1px solid #333;
+	box-shadow: 0 0 10px #000;
+    grid-template-columns: min-content;
+}
+.third {
+    grid-column: 1 / span 2;
+}
+
+@media only screen and (max-width: 600px) {
+    .gridarea {
+            grid-template-columns: 1fr;
+        }
+}

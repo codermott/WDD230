@@ -1,5 +1,4 @@
 .content {
-    width: 420px;
     align-content: center;
     
 }
@@ -11,8 +10,8 @@ body{
 header {
     display: flex;
     align-items: center;
-    background-color: blueviolet;
     border-radius: 10px;
+    background-color: blueviolet;
 	box-shadow: 0px 0px 20px 0px #000000;
 	padding: 10px;
 }
@@ -29,11 +28,13 @@ img {
     box-shadow: 0px 2px 10px #000000;
 }
 h1{
+    font-size: 1.5rem;
     margin-left: 30px;
     color: rgb(19, 220, 220);
     text-shadow: 2px 2px 5px #000000;
 }
 h2{
+    font-size: 1rem;
     text-shadow: 2px 2px 5px #000000;
 }
 .lesson{
