@@ -4,9 +4,7 @@
         align-items: center;
         background-color: coral;
         padding: 10px;
-        margin-bottom: 10px;
     }
-    
     .headings {
         display: flex;
         align-items: center;
@@ -16,6 +14,7 @@
     }
     
     nav {
+
         flex: 1;
         display: flex;
         justify-content: flex-end;
@@ -105,5 +104,4 @@
         flex: 1;
     }
 
-    
-}
+ }
