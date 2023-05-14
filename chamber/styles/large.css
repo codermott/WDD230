@@ -1,21 +1,47 @@
 @media screen and (min-width: 801px) {
     header {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         background-color: coral;
         padding: 10px;
         margin-bottom: 10px;
-        }
+    }
     
-        .headings {
-        text-align: left;
+    .headings {
+        display: flex;
         align-items: center;
+    }
+    .compname {
+        margin-bottom: -3px;
+    }
+    
+    nav {
         flex: 1;
-        }
-        button {
-            display: none;
-        }
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    #primarynav {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #primarynav li {
+        margin-right: 20px;
+    }
+    
+    .social1,
+    .social2 {
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    #hamburgerbtn {
+        display: none;
+    }
 
     .griditems {
         display: grid;

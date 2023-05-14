@@ -1,25 +1,4 @@
 @media screen and (min-width:401px) and (max-width: 800px) {
-    /*header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: coral;
-        padding: 10px;
-        margin-bottom: 10px;
-        }
-    
-        .headings {
-        text-align: left;
-        align-items: center;
-        flex: 1;
-        }
-        .compname{
-        margin-bottom: -4px;
-        }
-        .comptitle {
-        font-size: 0.8rem;
-        margin-top: 0;
-        }*/
         header {
             display: flex;
             justify-content: space-between;
@@ -30,9 +9,8 @@
         }
         
         .headings {
-            text-align: left;
+            display: flex;
             align-items: center;
-            flex: 1;
         }
         
         .compname {
@@ -43,6 +21,11 @@
             font-size: 0.8rem;
             margin-top: 0;
         }
+        .social1,
+        .social2 {
+        height: 30px;
+        margin-right: 10px;
+    }
         
         nav button {
             margin: .2rem 2vw;

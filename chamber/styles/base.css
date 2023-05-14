@@ -26,9 +26,13 @@ footer {margin-top: 20px;
     }
     
     .headings {
-        text-align: left;
+        display: flex;
         align-items: center;
-        flex: 1;
+    }
+    .social1,
+    .social2 {
+        height: 30px;
+        margin-right: 10px;
     }
     
     .compname {
@@ -46,10 +50,6 @@ footer {margin-top: 20px;
             font-size: 2rem;
             color: #a76464;
             float: right;
-        }
-        
-        nav {
-            
         }
         
         nav ul#primarynav {
