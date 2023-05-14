@@ -1,0 +1,110 @@
+@media screen and (min-width: 801px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: coral;
+        padding: 10px;
+        margin-bottom: 10px;
+        }
+    
+        .headings {
+        text-align: left;
+        align-items: center;
+        flex: 1;
+        }
+        .hamburger {
+            display: none;
+        }
+        .compname{
+            margin-bottom: -4px;
+        }
+        
+        .comptitle {
+        font-size: 0.8rem;
+        margin-top: 0;
+        }
+        
+        nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        }
+        
+        ul.menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+        
+        ul.menu a {
+        margin-right: 1rem;
+        }
+        
+        .social {
+        display: flex;
+        align-items: center;
+        
+        }
+        
+        .social img {
+        margin-left: 1rem;
+        width: 40px;
+        }
+
+    .griditems {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 100vh;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "a b b c"
+        "d b b c"
+        "e f f c";
+        
+    }
+    .heroimage {
+        grid-area: b;
+        border: 2px solid black;
+        box-sizing: border-box;
+        
+    }
+    .news {
+        grid-area: f;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+    .events {
+        grid-area: a;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+    .weather {
+        grid-area: d;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+    .join {
+        grid-area: e;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+    .companyspotlights {
+        grid-area: c;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+    .spotlight1 {
+        width: 50%;
+        border: 2px solid black;
+    }
+    .spotlight2 {
+        width: 50%;
+        border: 2px solid black;
+    }
+
+    
+}
