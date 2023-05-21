@@ -46,7 +46,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        height: 100vh;
+        height: 150vh;
         grid-gap: 10px;
         grid-template-areas: 
         "a b b c"
@@ -60,48 +60,125 @@
         justify-content: space-between;
     }
     .heroimage {
+        position: relative;
+        text-align: center;
         grid-area: b;
         border: 2px solid black;
-        box-sizing: border-box;
-        
     }
     .news {
+        text-align: center;
+       background-color: blue;
         grid-area: f;
         border: 2px solid black;
-        box-sizing: border-box;
     }
     .events {
+        text-align: center;
+        background-color: blue;
         grid-area: a;
         border: 2px solid black;
-        box-sizing: border-box;
     }
     .weather {
+        text-align: center;
+        background-color: blue;
         grid-area: d;
         border: 2px solid black;
-        box-sizing: border-box;
     }
     .join {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
         grid-area: e;
         border: 2px solid black;
-        box-sizing: border-box;
     }
     .companyspotlights {
+        background-color: blue;
         grid-area: c;
         border: 2px solid black;
         padding: 5px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+        
     }
       
     .spotlight1 {
+        text-align: center;
+        background-color: purple;
         border: 2px solid black;
         flex: 1;
     }
       
     .spotlight2 {
+        text-align: center;
+        background-color: purple;
         border: 2px solid black;
         flex: 1;
     }
+    .joinchmbr {
+        height: 40px;
+        width: 90%;
+        background-color: green;
+        text-align: center;
+        border-radius: 25px;
+      }
+      .herotitle {
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        margin-left: 20px;
+      }
+      .heroimg{
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        margin: 0;
+      }
+      .joinbutton {
+        position: absolute; 
+        bottom: 0; 
+        right: 0;
+        height: 25%;
+        border-radius: 25px;
+        background-color: green;
+        width: 50%;
+        height: 10%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      .transportimg {
+        width: 50%;
+      }
+      .primeraphoto{
+        width: 50%;
+      }
+      h2{
+        color:yellow;
+      }
+      h3 {
+        color: white
+      }
+      h4 {
+        color: white;
+      }
+      p {
+        color:white
+      }
+      .weather {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+      }
+      .temp, .weathertype{
+        display: flex;
+        align-items: right;
+      }
+      .windspeed, .windchill {
+        display: flex; 
+        align-items: left;
+
+      }
+      .windspeed {
+        border-top: 1px solid white;
+      }
 
  }
