@@ -86,13 +86,21 @@
     .gridarea {
       grid-template-columns: repeat(2, 1fr);
     }
+    .third { grid-column: span 2;
+    }
+    .third img {
+      width: 100%;
+    }
+    
   }
   
   @media screen and (max-width: 480px) {
     .gridarea {
       grid-template-columns: 1fr;
     }
+    
   }
+
   
   @media screen and (max-width: 320px) {
     .title {
