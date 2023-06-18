@@ -1,0 +1,83 @@
+footer {margin-top: 20px;
+    
+    border-radius: 10px;
+    background-color: blueviolet;
+	box-shadow: 0px 0px 20px 0px #000000;
+	padding: 10px;
+}
+.copyright{
+    border-top: 2px solid white;
+    color: rgb(19, 220, 220);
+    text-align: center;
+}
+#last-modified {
+    color: rgb(19, 220, 220);
+    text-align: center;
+}
+.current-time {
+    background-color: coral;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 400px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: coral;
+        padding: 10px;
+    }
+    
+    .headings {
+        display: flex;
+        align-items: center;
+    }
+    .social1,
+    .social2 {
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .compname {
+        margin-bottom: -4px;
+    }
+    
+    .comptitle {
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+    nav button {
+            margin: .2rem 2vw;
+            background: transparent;
+            border: none;
+            font-size: 2rem;
+            color: #a76464;
+            float: right;
+        }
+        
+        nav ul#primarynav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li a {
+            display: block;
+            padding: .8rem 2vw;
+            text-decoration: none;
+            color: #333;
+            border-top: 1px solid rgba(0, 0, 0, .5);
+        }
+        nav ul li.active a {
+            background-color: rgba(0, 0, 0, .2);
+            color: white;
+        }
+        nav ul li a:hover {
+            background-color: rgba(0, 0, 0, .3);
+        }
+         nav ul {display: none;} 
+        
+         nav ul.open {display: block;
+            background-color: white;}
+        } 
