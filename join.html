@@ -28,9 +28,14 @@
             <img class="social2" src="chamber\img\Screenshot 2023-05-13 213702.png" alt="logo 2">
             <button id="hamburgerbtn">&#9776</button>
         </nav>
+        
     </header>
+    <section class="current-time">
+        <div id="current-date"></div>
+        <div id="current-time"></div>
+    </section>
     <main>
-        <h1>Join</h1>
+        <h1 class="jointi">Join</h1>
         <form method="get" action="thankyou.html">
             <input type="text" name="first_name" placeholder="First Name" required><br><br>
             <input type="text" name="last_name" placeholder="Last Name" required><br><br>
@@ -50,14 +55,16 @@
           </form>
     </main>
     <footer>
-        <div class="logo"><img src="chamber\img\rexburgcoc.png" alt="logo" width="100px"></div>
-        <h1 class="compname">Rexburg</h1>
-        <div class="comptitle">Chamber of Commerce</div>
-        <div class="copyright">
-            &#169 2023 .:|:. Chase Odermott .:|:. Idaho
+        <div class="footercomp">
+            <div class="footerlogo"><img src="chamber\img\rexburgcoc.png" alt="logo" width="100px"></div>
+            <h1 class="footercompname">Rexburg</h1>
+            <div class="footercomptitle">Chamber of Commerce</div>
         </div>
-        <p id="last-modified"></p>
-        <script src="chamber\scripts\script.js"></script>
+            <div class="copyright">
+                &#169 2023 .:|:. Chase Odermott .:|:. Idaho
+            </div>
+            <p id="last-modified"></p>
+            <script src="chamber\scripts\script.js"></script>
     </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 @media screen and (min-width: 801px) {
-    header {
+  header {
         display: flex;
         align-items: center;
         background-color: coral;
@@ -69,12 +69,14 @@
        background-color: blue;
         grid-area: f;
         border: 2px solid black;
+        padding: 20px;
     }
     .events {
         text-align: center;
         background-color: blue;
         grid-area: a;
         border: 2px solid black;
+        padding: 20px;
     }
     .weather {
         text-align: center;
@@ -90,6 +92,7 @@
         background-color: blue;
         grid-area: e;
         border: 2px solid black;
+        padding: 20px;
     }
     .companyspotlights {
         background-color: blue;
@@ -207,6 +210,6 @@
       .footercompname {
         margin-bottom: 0px;
       }
-      .
+      
 }
  
