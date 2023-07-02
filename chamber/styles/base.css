@@ -1,12 +1,4 @@
 
-
-footer {margin-top: 20px;
-    
-    border-radius: 10px;
-    background-color: blueviolet;
-	box-shadow: 0px 0px 20px 0px #000000;
-	padding: 10px;
-}
 .copyright{
     border-top: 2px solid white;
     color: rgb(19, 220, 220);
@@ -22,6 +14,20 @@ footer {margin-top: 20px;
     text-align: center;
     padding-bottom: 5px;
     margin-bottom: 10px;
+}
+form {
+  background-color: blue;
+  text-align: center;
+  padding: 10px;
+  margin;
+}
+input {
+  width: 70%;
+
+}
+input[type="submit"] {
+  border-radius: 10px;
+  width: 20%;
 }
 
 @media screen and (max-width: 400px) {
@@ -89,23 +95,20 @@ footer {margin-top: 20px;
 
        
 
-    .griditems {
+   .griditems {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-gap: 10px;
-        height: 300vh;
         grid-template-areas: 
         "a"
         "b"
         "c"
         "d"
         "e"
-        "f";
+        "f"
+        "g";
     }
-
-    
-
     .heroimage {
         position: relative;
         text-align: center;
@@ -125,10 +128,16 @@ footer {margin-top: 20px;
 
 
     .news {
-        text-align: center;
-        background-color: blue;
-        grid-area: d;
-        border: 2px solid black;
+      text-align: center;
+      grid-area: d;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: blue;
+      padding: 10px;
+      box-sizing: border-box;
     }
 
     .events {
@@ -243,4 +252,17 @@ footer {margin-top: 20px;
       .spotlight2contact{
         border-top: 1px solid white;
       }
+      footer{
+          margin-top: 20px;
+          border-radius: 10px;
+          background-color: blueviolet;
+          box-shadow: 0px 0px 20px 0px #000000;
+          padding: 10px;
+      }
+        .footerlogo{
+          margin-bottom: -30px;
+        }
+        .footercompname {
+          margin-bottom: 0px;
+        }
 }

@@ -186,4 +186,11 @@
       .spotlight2contact{
         border-top: 1px solid white;
       }
+      footer {
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: blueviolet;
+        box-shadow: 0px 0px 20px 0px #000000;
+        padding: 10px;
+      }
  }

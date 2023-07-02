@@ -1,5 +1,5 @@
-@media screen and (min-width:401px) and (max-width: 800px) {
-        header {
+@media screen and (min-width:401px) and (max-width: 800px) { 
+  header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -65,7 +65,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        height: 168vh;
         grid-template-areas: 
         "a a a"
         "b b b"
@@ -73,6 +72,7 @@
         "d d d"
         "e e f";
         grid-gap: 10px;
+        margin-bottom: 10px;
     }
     .heroimage {
         position: relative;
@@ -83,7 +83,7 @@
     }
     .news {
         text-align: center;
-       background-color: blue;
+       background-color: black;
         grid-area: b;
         border: 2px solid black;
       
@@ -207,7 +207,19 @@
       .windspeed {
         border-top: 1px solid white;
       }
-
+      footer {
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: blueviolet;
+        box-shadow: 0px 0px 20px 0px #000000;
+        padding: 10px;
+      }
+      .footerlogo{
+        margin-bottom: -30px;
+      }
+      .footercompname {
+        margin-bottom: 0px;
+      }
 }
 
  

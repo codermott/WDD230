@@ -31,6 +31,23 @@
     </header>
     <main>
         <h1>Join</h1>
+        <form method="get" action="thankyou.html">
+            <input type="text" name="first_name" placeholder="First Name" required><br><br>
+            <input type="text" name="last_name" placeholder="Last Name" required><br><br>
+            <input type="text" name="position_title" placeholder="Business Position Title" pattern="[A-Za-z\s-]{7,}"><br><br>
+            <input type="email" name="email" placeholder="Email" required><br><br>
+            <input type="tel" name="phone_number" placeholder="Cell Phone Number" required><br><br>
+            <input type="text" name="business_name" placeholder="Business Name/Title" required><br><br>
+            <select name="membership_level">
+              <option value="NP Membership">NP Membership</option>
+              <option value="Bronze Membership">Bronze Membership</option>
+              <option value="Silver Membership">Silver Membership</option>
+              <option value="Gold Membership">Gold Membership</option>
+            </select><br><br>
+            <textarea name="business_description" placeholder="Business Description"></textarea><br><br>
+            <input type="hidden" name="form_submission_time" value="">
+            <input type="submit" value="Submit">
+          </form>
     </main>
     <footer>
         <div class="logo"><img src="chamber\img\rexburgcoc.png" alt="logo" width="100px"></div>
