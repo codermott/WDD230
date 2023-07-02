@@ -29,6 +29,35 @@ input[type="submit"] {
   border-radius: 10px;
   width: 20%;
 }
+.contactdetails h2{
+  color: black;
+}
+.officehours h2 {
+  color: black;
+}
+.contactpg {
+  background-color: blue;
+  padding: 20px;
+}
+.contactfm {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black
+}
+.contactpg h1{
+  color: yellow;
+}
+.contactpg h3{
+  color: yellow;
+}
+.contactd li {
+  color: white;
+}
+a.emailt {
+  color: black;
+}
+
+
 
 @media screen and (max-width: 400px) {
     header {
@@ -90,11 +119,6 @@ input[type="submit"] {
          nav ul.open {display: block;
             background-color: white;
         } 
-       
-        
-
-       
-
    .griditems {
         display: grid;
         grid-template-columns: 1fr;
@@ -177,6 +201,10 @@ input[type="submit"] {
         background-color: purple;
         flex-grow: 1;
         border: 2px solid black;
+        
+      }
+      .spotlight3 {
+       display:none;
         
       }
       .joinchmbr {

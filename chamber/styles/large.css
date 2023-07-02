@@ -46,7 +46,6 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        height: 150vh;
         grid-gap: 10px;
         grid-template-areas: 
         "a b b c"
@@ -113,6 +112,12 @@
         border: 2px solid black;
         flex: 1;
     }
+    .spotlight3 {
+      text-align: center;
+      background-color: purple;
+      border: 2px solid black;
+      flex: 1;}
+      
     .joinchmbr {
         height: 40px;
         width: 90%;
@@ -143,6 +148,9 @@
         height: 10%;
         margin-right: 20px;
         margin-bottom: 20px;
+      }
+      .joindesc{
+        margin: 10px;
       }
       .transportimg {
         width: 50%;
@@ -193,4 +201,12 @@
         box-shadow: 0px 0px 20px 0px #000000;
         padding: 10px;
       }
- }
+      .footerlogo{
+        margin-bottom: -30px;
+      }
+      .footercompname {
+        margin-bottom: 0px;
+      }
+      .
+}
+ 

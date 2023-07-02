@@ -129,7 +129,7 @@
         background-color: purple;
         flex-grow: 1;
         border: 2px solid black;
-        width: 40%;
+       
        
       }
       .spotlight2 {
@@ -137,7 +137,15 @@
         background-color: purple;
         flex-grow: 1;
         border: 2px solid black;
-        width:40%
+       
+        
+      }
+      .spotlight3 {
+        text-align: center;
+        background-color: purple;
+        flex-grow: 1;
+        border: 2px solid black;
+      
         
       }
       .joinchmbr {
