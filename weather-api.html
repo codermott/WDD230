@@ -6,12 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>OpenWeatherMap.org API Test</h1>
-    <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span> &deg;F</p>
-    <h2>Current Condition Icon</h2>
-    <figure>
-      <img src="" alt="" id="weather-icon" />
-      <figcaption></figcaption>
-    </figure>
+  <div class="weather tile">
+    <h3 id="weatherStatus">Clear</h3>
+    <em id="weatherDetails">clear sky</em>
+    <img id="weatherIcon" src="https://openweathermap.org/img/wn/01d@2x.png">
+    <p>Temperature: <span id="temp">21.08</span>° C</p>
+    <p>Wind Speed: <span id="windspeed">1.34</span> kmph</p>
+    <p>Windchill: <span id="windchill">N/A</span></p>
+</div>
+<script src="chamber\scripts\weather.js"></script>
 </body>
 </html>

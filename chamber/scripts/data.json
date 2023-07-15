@@ -1,0 +1,16 @@
+{
+    "businesses":
+    [
+        {
+            "name":"   ",
+            "address":"   ",
+            "contactPerson": "   ",
+            "phonenumber":"   ",
+            "url": "   ",
+            "image": "  ",
+            "membershipLevel": "silver",
+            "businessType": "   ",
+            "EstIn": "   "
+        }
+    ]
+}
