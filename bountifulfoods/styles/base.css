@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body {
+    margin: 0px;
+    background-color: #C2BBB3;
+}
+h1 {
+    font-family: 'EB Garamond', bold;
+}
+h2 {
+    font-family: 'EB Garamond', bold;
+    background-color: #393E5C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+p {
+    font-family: 'EB Garamond', serif;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+header {
+    background-color: #2B242C;
+    height: 50px;
+}
+.headernav{
+    margin: 0;
+        display: flex;
+        list-style: none;
+        padding: 0;
+      
+}
+.head {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+  
+  .headernav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+  }
+  .headernav a{
+    color: white;
+  }
+  
+  .headernav li {
+    margin-left: 20px; /* Adjust this value to set the spacing between links */
+  }
+  
+  .headernav li:first-child {
+    margin-left: 0; /* Remove margin from the first link to avoid extra space */
+  }
+footer {
+    background-color: #2B242C;
+    text-align: center;
+    color: white;
+}
+.footercont h1{
+    margin: 0;
+}
+footer p{
+    background-color: #2B242C;
+    color: white;
+}
+#last-modified{
+    margin: 0;
+    color: white;
+}
+.fullscreensect {
+    background-image: url("../img/fruitplatter.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh; /* Set the height to full screen */
+    width: 100% auto;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    margin: 0px;
+}
+.fullscreentitle {
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+  }
+.title {
+    font-size: 48px;
+    text-shadow: 2px 2px 6px black;
+    
+  }
+  .freshfullscreensect {
+    background-image: url("../img/drinks.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh; /* Set the height to full screen */
+    width: 100% auto;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    margin: 0px;
+}
+.freshfullscreentitle {
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+  }
+.freshtitle {
+    font-size: 48px;
+    text-shadow: 2px 2px 6px black;
+    
+  }
+  .aboutfullscreensect {
+    background-image: url("../img/hello.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh; /* Set the height to full screen */
+    width: 100% auto;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    margin: 0px;
+}
+.aboutfullscreentitle {
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+  }
+.abouttitle {
+    font-size: 48px;
+    text-shadow: 2px 2px 6px black;
+    
+  }
+.areasect {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+.areatitle {
+    margin-bottom: 0;
+}
+.areadesc{
+    margin-top: 0;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.weathersect, .cardsect {
+    flex: 1;
+    margin: 20px;
+  }
+
+.socialsect{
+    width:25%;
+    margin: auto;
+}
+.socialsect {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #393E5C;
+  }
+  /* Additional CSS styles for the form fields */
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+.orderform button{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+.form-field label {
+    font-weight: bold;
+    margin: auto;
+}
+
+.form-field select,
+.form-field input,
+.form-field textarea {
+    width: 75%;
+    padding: 5px;
+    font-size: 16px;
+    margin: auto;
+}
+
+/* Additional CSS styles for the order summary */
+.orderoutput {
+    display: none; /* Hide the order summary initially */
+}
+
+.orderoutput h2 {
+    margin-top: 40px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh</title>
+    <link rel="stylesheet" href="styles\base.css">
+    <link rel="stylesheet" href="styles\medium.css">
+    <link rel="stylesheet" href="styles\large.css">
+    <link rel="stylesheet" href="styles\small.css">
+</head>
+<body>
+    <header class="head">
+        <nav>
+            <ul class="headernav">
+                <li><a href="index.html">Home<a/></li>
+                <li><a href="fresh.html">Fresh<a/></li>
+                <li><a href="aboutus.html">About Us<a/></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="freshfullscreensect">
+            <div class="freshfullscreentitle">
+                <h1 class="freshtitle">Fresh Drinks</h1>
+            </div>
+        </section>
+        <section class="orderform">
+            <h2>Order Form</h2>
+            <form id="orderForm">
+                <div class="form-field">
+                    <input type="text" id="fname" placeholder="First Name"required>
+                </div>
+
+                <div class="form-field">
+                    <input type="text" id="lname" placeholder="Last Name"required>
+                </div>
+
+                <div class="form-field">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-field">
+                    <input type="tel" id="phone" placeholder="Phone Number"required>
+                </div>
+
+                <div class="form-field">
+                    <label for="fruit1">Fruit 1:</label>
+                    <select id="fruit1" required></select>
+                </div>
+
+                <div class="form-field">
+                    <label for="fruit2">Fruit 2:</label>
+                    <select id="fruit2" required></select>
+                </div>
+
+                <div class="form-field">
+                    <label for="fruit3">Fruit 3:</label>
+                    <select id="fruit3" required></select>
+                </div>
+
+                <div class="form-field">
+                    <textarea id="specialInstructions" rows="4" placeholder="Special instructions"></textarea>
+                </div>
+
+                <div class="form-field">
+                    <button type="submit">Place Order</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="orderoutput">
+            <h2>Order Summary</h2>
+            <div id="orderSummary"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footercont">
+            <div class="copyright">
+                &#169 2023 .:|:. Chase Odermott .:|:. Idaho
+            </div>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+    <script src="scripts\script.js"></script>
+    <script src="scripts\orderform.js"></script>
+</body>
+</html>
