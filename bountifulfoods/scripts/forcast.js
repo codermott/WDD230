@@ -1,105 +1,83 @@
-function GetInfo() {
-
-    var newName = document.getElementById("cityInput");
-    var cityName = document.getElementById("cityName");
-    cityName.innerHTML = "--"+newName.value+"--";
-
-fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appid=32ba0bfed592484379e51106cef3f204')
-.then(response => response.json())
-.then(data => {
-
-    //Getting the min and max values for each day
-    for(i = 0; i<5; i++){
-        document.getElementById("day" + (i+1) + "Min").innerHTML = "Min: " + Number(data.list[i].main.temp_min - 273.15).toFixed(1)+ "°";
-        //Number(1.3450001).toFixed(2); // 1.35
-    }
-
-    for(i = 0; i<5; i++){
-        document.getElementById("day" + (i+1) + "Max").innerHTML = "Max: " + Number(data.list[i].main.temp_max - 273.15).toFixed(2) + "°";
-    }
-    //------------------------------------------------------------
-
-    //Getting Weather Icons
-     for(i = 0; i<5; i++){
-        document.getElementById("img" + (i+1)).src = "http://openweathermap.org/img/wn/"+
-        data.list[i].weather[0].icon
-        +".png";
-    }
-    //------------------------------------------------------------
-    console.log(data)
-
-
-})
-
-.catch(err => alert("Something Went Wrong: Try Checking Your Internet Coneciton"))
-}
-
-function DefaultScreen(){
-    document.getElementById("cityInput").defaultValue = "London";
-    GetInfo();
-}
-
-
-//Getting and displaying the text for the upcoming five days of the week
-var d = new Date();
-var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",];
-
-//Function to get the correct integer for the index of the days array
-function CheckDay(day){
-    if(day + d.getDay() > 6){
-        return day + d.getDay() - 7;
-    }
-    else{
-        return day + d.getDay();
-    }
-}
-
-    for(i = 0; i<5; i++){
-        document.getElementById("day" + (i+1)).innerHTML = weekday[CheckDay(i)];
-    }
-    //------------------------------------------------------------
-
-
-/*
-document.getElementById("day1Min").innerHTML = Math.round(data.list[0].main.temp_min - 273.15, -2);
-document.getElementById("day2Min").innerHTML = Math.round(data.list[1].main.temp_min - 273.15, -2);
-document.getElementById("day3Min").innerHTML = Math.round(data.list[2].main.temp_min - 273.15, -2);
-document.getElementById("day4Min").innerHTML = Math.round(data.list[3].main.temp_min - 273.15, -2);
-document.getElementById("day5Min").innerHTML = Math.round(data.list[4].main.temp_min - 273.15, -2);*/
-
-/*document.getElementById("day1Max").innerHTML = Math.round(data.list[0].main.temp_max - 273.15, -2);
-document.getElementById("day2Max").innerHTML = Math.round(data.list[0].main.temp_max - 273.15, -2);
-document.getElementById("day3Max").innerHTML = Math.round(data.list[0].main.temp_max - 273.15, -2);
-document.getElementById("day4Max").innerHTML = Math.round(data.list[0].main.temp_max - 273.15, -2);
-document.getElementById("day5Max").innerHTML = Math.round(data.list[0].main.temp_max - 273.15, -2);*/
-
-/*document.getElementById("img1").src = "http://openweathermap.org/img/w/"+
-data.list[0].weather[0].icon
-+".png";
-document.getElementById("img2").src = "http://openweathermap.org/img/w/"+
-data.list[1].weather[0].icon
-+".png";
-document.getElementById("img3").src = "http://openweathermap.org/img/w/"+
-data.list[2].weather[0].icon
-+".png";
-document.getElementById("img4").src = "http://openweathermap.org/img/w/"+
-data.list[3].weather[0].icon
-+".png";
-document.getElementById("img5").src = "http://openweathermap.org/img/w/"+
-data.list[4].weather[0].icon
-+".png";*/
-
-/*
-document.getElementById("day1").innerHTML = weekday[CheckDay(0)];
-document.getElementById("day2").innerHTML = weekday[CheckDay(1)];
-document.getElementById("day3").innerHTML = weekday[CheckDay(2)];
-document.getElementById("day4").innerHTML = weekday[CheckDay(3)];
-document.getElementById("day5").innerHTML = weekday[CheckDay(4)];*/
-
-/*weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";*/
+document.addEventListener('DOMContentLoaded', () => {
+    const API_KEY = '9c0bee6f434d831ee24ba541b382e9d4'; 
+    const latitude = 32.7153; // Replace with your desired location latitude
+    const longitude = -117.1573; // Replace with your desired location longitude
+      
+        const weatherForecastElement = document.getElementById('weatherForecast');
+        const maxDisplayedDays = 3;
+      
+        // Function to fetch weather data from OpenWeatherMap API
+        async function fetchWeatherForecast() {
+          try {
+            const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
+            const response = await fetch(url);
+            const data = await response.json();
+            return data;
+          } catch (error) {
+            console.error('Error fetching weather data:', error);
+          }
+        }
+      
+        // Function to convert temperature from Kelvin to Celsius
+        function kelvinToCelsius(kelvin) {
+          return (kelvin - 273.15).toFixed(1);
+        }
+      
+        // Function to display the weather forecast in a table
+        function displayWeatherForecast(data) {
+          weatherForecastElement.innerHTML = '';
+      
+          const forecastByDay = {};
+      
+          for (const forecast of data.list) {
+            const dateTime = new Date(forecast.dt_txt);
+            const date = dateTime.toDateString();
+      
+            if (!forecastByDay[date]) {
+              forecastByDay[date] = {
+                temperature: kelvinToCelsius(forecast.main.temp),
+                description: forecast.weather[0].description,
+                icon: forecast.weather[0].icon
+              };
+            }
+          }
+      
+          const table = document.createElement('table');
+          table.classList.add('weather-table');
+      
+          // Create the title row
+          const titleRow = table.insertRow();
+          const titleCell = titleRow.insertCell();
+          //titleCell.textContent = '5-Day Weather Forecast';
+          titleCell.colSpan = 3;
+          titleCell.classList.add('title-cell');
+      
+          let displayedDays = 0;
+          const dataRow = table.insertRow();
+      
+          for (const [date, forecast] of Object.entries(forecastByDay)) {
+            if (displayedDays >= maxDisplayedDays) {
+              break;
+            }
+      
+            const dateCell = dataRow.insertCell();
+            dateCell.textContent = date;
+      
+            const weatherIcon = document.createElement('img');
+            weatherIcon.src = `http://openweathermap.org/img/w/${forecast.icon}.png`;
+            weatherIcon.alt = forecast.description;
+            dateCell.appendChild(weatherIcon);
+      
+            const tempCell = dataRow.insertCell();
+            tempCell.textContent = `${forecast.temperature} °C`;
+      
+            displayedDays++;
+          }
+      
+          weatherForecastElement.appendChild(table);
+        }
+      
+        // Fetch weather data and display the forecast
+        fetchWeatherForecast().then(displayWeatherForecast);
+      });
+      
