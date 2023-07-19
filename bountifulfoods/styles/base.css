@@ -2,7 +2,7 @@
 
 body {
     margin: 0px;
-    background-color: #C2BBB3;
+    background-color: #FFA69E;
 }
 h1 {
     font-family: 'EB Garamond', bold;
@@ -13,28 +13,25 @@ h2 {
     color: white;
     text-align: center;
     padding: 10px;
+    margin: 0;
+}
+.compname{
+  color: white;
 }
 p {
     font-family: 'EB Garamond', serif;
-    background-color: white;
     text-align: center;
     padding: 10px;
+    font-size: 25px;
 }
 header {
     background-color: #2B242C;
-    height: 50px;
-}
-.headernav{
-    margin: 0;
-        display: flex;
-        list-style: none;
-        padding: 0;
-      
 }
 .head {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-direction: column;
     
   }
   
@@ -42,12 +39,16 @@ header {
     display: flex;
     list-style: none;
     padding: 0;
-    margin-right: 20px;
-    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
   }
+
   .headernav a{
     color: white;
   }
+.headernav :hover{
+  color: #FF686B;
+}
   
   .headernav li {
     list-style: none;
@@ -95,6 +96,7 @@ footer p{
     justify-content: center; /* Center the content horizontally */
     align-items: center;
     margin: 0px;
+    flex-direction: column;
 }
 .fullscreentitle {
     text-align: center;
@@ -102,8 +104,8 @@ footer p{
     color: white;
   }
 .title {
-    font-size: 48px;
-    text-shadow: 2px 2px 6px black;
+  font-size: 48px;
+  text-shadow: 1px 1px 20px black;
     
   }
   .freshfullscreensect {
@@ -128,18 +130,6 @@ footer p{
     text-shadow: 2px 2px 6px black;
     
   }
-  .aboutfullscreensect {
-    background-image: url("../img/hello.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh; /* Set the height to full screen */
-    width: 100% auto;
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center;
-    margin: 0px;
-}
 .aboutfullscreentitle {
     text-align: center;
     padding-top: 40px;
@@ -171,8 +161,11 @@ footer p{
 .areasect, .cardsect {
     flex: 1;
     margin: 20px;
+    background-color: #84DCC6;
   }
-
+.socialnav {
+  display: flex;
+}
 .socialsect{
     width:25%;
     margin: auto;
@@ -220,15 +213,15 @@ footer p{
     margin-top: 40px;
 }
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
+  width: 75%;
+  margin: 0px auto;
+  background-color: #84DCC6;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: A5FFD6;
 }
 .weather-card {
   padding: 10px;
@@ -258,6 +251,56 @@ footer p{
 .weather-table {
   margin: auto;
 }
-.weather-info {
+#weather-info{
+  background-color: white;
   border: 2px solid black;
+  max-width: 300px;
+  margin: 10px auto;
+}
+.orderform{
+  margin: 20px;
+}
+.aboutuscont {
+  width: 75%;
+  margin: auto;
+  background-color: #84DCC6;
+}
+.aboutusdesc {
+  padding: 20px;
+}
+.aboutusbody {
+  background-image: url(../img/fruits.jpg);
+  background-size: cover;
+  background-position: unset;
+}
+
+.iframecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Style the iframe to have a maximum width if desired */
+.iframecontainer iframe {
+  max-width: 100%;
+}
+.contactinfo {
+  background-color: white;
+    margin: 20px auto;
+    width: 25%;
+    padding: 20px;
+}
+.fullscreenbttn :hover{
+  background-color: #FF686B;
+  color: white;
+}
+button {
+  font-family: 'EB Garamond', serif;
+  width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    background: #FFA69E;
+    color: white;
 }

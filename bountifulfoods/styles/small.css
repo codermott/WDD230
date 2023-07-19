@@ -6,7 +6,6 @@
         height: 100%;
         width: 100%;
         background-color: rgba(142, 133, 103);
-        bac
         display: flex;
         flex-direction: column;
         align-items: center; /* Center the navigation links vertically */
@@ -17,4 +16,33 @@
         margin-right: 0;
         margin-bottom: 20px; /* Add some spacing between the navigation links */
     }
+    .flex-container {
+       display: block;
+}
+.weather-table tr {
+    display: block;
+  }
+
+  .weather-table td {
+    display: block;
+    margin-bottom: 10px; /* Add spacing between table cells for better visibility */
+  }
+}
+.areasect, .cardsect {
+    margin: 20px;
+    background-color: #84DCC6;
+width: 90%; }
+.contactinfo{
+    width: 75%;
+}
+p{
+    font-size: 15px;
+}
+nav {
+    margin: 10px auto;
+}
+.hamburger-btn {
+    padding: 10px;
+    margin: 10px;
+    background: white;
 }
