@@ -1,0 +1,20 @@
+@media (max-width: 400px) {
+    .headernav.show {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(142, 133, 103);
+        bac
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the navigation links vertically */
+        justify-content: center; /* Center the navigation links horizontally */
+    }
+
+    .headernav li {
+        margin-right: 0;
+        margin-bottom: 20px; /* Add some spacing between the navigation links */
+    }
+}

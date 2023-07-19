@@ -1,0 +1,25 @@
+@media (max-width: 600px) {
+    .hamburger-btn {
+        display: block;
+        background-color: ;
+    }
+
+    .headernav {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .headernav li {
+        margin-right: 0;
+        
+    }
+
+    .headernav.show {
+        display: flex;
+    }
+    .headernav a{ 
+        color: black;
+    }
+}

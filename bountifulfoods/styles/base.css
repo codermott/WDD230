@@ -43,18 +43,31 @@ header {
     list-style: none;
     padding: 0;
     margin-right: 20px;
+    justify-content: space-between;
   }
   .headernav a{
     color: white;
   }
   
   .headernav li {
-    margin-left: 20px; /* Adjust this value to set the spacing between links */
+    list-style: none;
+    margin-right: 20px; /* Adjust this value to set the spacing between links */
   }
   
   .headernav li:first-child {
     margin-left: 0; /* Remove margin from the first link to avoid extra space */
   }
+  .hamburger-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    margin: 6px 0;
+}
 footer {
     background-color: #2B242C;
     text-align: center;
