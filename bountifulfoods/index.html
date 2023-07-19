@@ -40,10 +40,17 @@
         <div class="flex-container">
             <section class="weathersect">
                 <div class="weatherarea">
-                    <h2 class="weathertitle">Weather
-                    </h2>
+                  <h2 class="weathertitle">Weather</h2>
+                  <div id="weather-info">
+                    <p>Current Temperature: <span id="temp-placeholder">--</span></p>
+                    <p>Humidity: <span id="humidity-placeholder">--</span></p>
+                    <p>Weather: <span id="weather-placeholder">--</span></p>
+                  </div>
+                  <div id="forecast-info">
+                    
+                  </div>
                 </div>
-            </section>
+              </section>
             <section class="cardsect">
                 <div class="cardarea">
                     <h2 class="cardtitle">Specialty Drinks
@@ -75,5 +82,7 @@
         </div>
     </footer>
     <script src="scripts\script.js"></script>
+    <script src="scripts\weather.js"></script>
+    <script src="scripts\forecast.js"></script>
 </body>
 </html>
