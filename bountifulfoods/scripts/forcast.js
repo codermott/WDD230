@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const latitude = 32.7153; // Replace with your desired location latitude
     const longitude = -117.1573; // Replace with your desired location longitude
       
-        const weatherForecastElement = document.getElementById('weatherForecast');
+        const column1Element = document.getElementById('column1');
+        const column2Element = document.getElementById('column2');
+        const column3Element = document.getElementById('column3');
         const maxDisplayedDays = 3;
       
         // Function to fetch weather data from OpenWeatherMap API
@@ -23,9 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
           return (kelvin - 273.15).toFixed(1);
         }
       
-        // Function to display the weather forecast in a table
+        // Function to display the weather forecast
         function displayWeatherForecast(data) {
-          weatherForecastElement.innerHTML = '';
+          column1Element.innerHTML = '';
+          column2Element.innerHTML = '';
+          column3Element.innerHTML = '';
       
           const forecastByDay = {};
       
@@ -42,39 +46,45 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           }
       
-          const table = document.createElement('table');
-          table.classList.add('weather-table');
-      
-          // Create the title row
-          const titleRow = table.insertRow();
-          const titleCell = titleRow.insertCell();
-          //titleCell.textContent = '5-Day Weather Forecast';
-          titleCell.colSpan = 3;
-          titleCell.classList.add('title-cell');
-      
           let displayedDays = 0;
-          const dataRow = table.insertRow();
       
           for (const [date, forecast] of Object.entries(forecastByDay)) {
             if (displayedDays >= maxDisplayedDays) {
               break;
             }
       
-            const dateCell = dataRow.insertCell();
-            dateCell.textContent = date;
+            const weatherCard = document.createElement('div');
+            weatherCard.classList.add('weather-card');
       
             const weatherIcon = document.createElement('img');
             weatherIcon.src = `http://openweathermap.org/img/w/${forecast.icon}.png`;
             weatherIcon.alt = forecast.description;
-            dateCell.appendChild(weatherIcon);
+            weatherCard.appendChild(weatherIcon);
       
-            const tempCell = dataRow.insertCell();
-            tempCell.textContent = `${forecast.temperature} °C`;
+            const dateElement = document.createElement('p');
+            dateElement.textContent = date;
+            weatherCard.appendChild(dateElement);
+      
+            const temperatureElement = document.createElement('p');
+            temperatureElement.classList.add('temperature');
+            temperatureElement.textContent = `${forecast.temperature} °C`;
+            weatherCard.appendChild(temperatureElement);
+      
+            const descriptionElement = document.createElement('p');
+            descriptionElement.classList.add('description');
+            descriptionElement.textContent = forecast.description;
+            weatherCard.appendChild(descriptionElement);
+      
+            if (displayedDays === 0) {
+              column1Element.appendChild(weatherCard);
+            } else if (displayedDays === 1) {
+              column2Element.appendChild(weatherCard);
+            } else {
+              column3Element.appendChild(weatherCard);
+            }
       
             displayedDays++;
           }
-      
-          weatherForecastElement.appendChild(table);
         }
       
         // Fetch weather data and display the forecast

@@ -27,55 +27,62 @@
                 <h1 class="title">Bountiful Foods</h1>
             </div>
         </section>
-        <section class="areasect">
-            <div class="areacont">
-                <h2 class="areatitle">From Los Angeles To San Diego</h2>
-                <p class="areadesc">Our farm-to-table company sells organic produce sourced from Los Angeles to San Diego. 
-                    We are committed to sustainable farming practices and work closely with local farmers to deliver the freshest, 
-                    chemical-free fruits and vegetables. With efficient delivery, customers in San Diego can enjoy the true taste of nature 
-                    right at their doorstep. Embrace a healthier lifestyle with our hand-picked, organic bounty from Los Angeles.
-                </p>
-            </div>
-        </section>
-        <div class="flex-container">
-            <section class="weathersect">
+        <section class="weathersect">
+
+              <div class="container">
                 <div class="weatherarea">
-                  <h2 class="weathertitle">Weather</h2>
-                  <div id="weather-info">
-                    <p>Current Temperature: <span id="temp-placeholder">--</span></p>
-                    <p>Humidity: <span id="humidity-placeholder">--</span></p>
-                    <p>Weather: <span id="weather-placeholder">--</span></p>
-                  </div>
-                  <div class="container">
-                    <h1>5-Day Weather Forecast</h1>
-                    <div id="weatherForecast"></div>
-                  </div>
-                </div>
-              </section>
+                    <h2 class="weathertitle">Weather</h2>
+                    <div id="weather-info">
+                      <p>Current Temperature: <span id="temp-placeholder">--</span></p>
+                      <p>Humidity: <span id="humidity-placeholder">--</span></p>
+                      <p>Weather: <span id="weather-placeholder">--</span></p>
+                    </div>
+                <h1>5-Day Weather Forecast</h1>
+                <table class="weather-table">
+                  <tr>
+                    <td id="column1"></td>
+                    <td id="column2"></td>
+                    <td id="column3"></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </section>
+        <div class="flex-container">
             <section class="cardsect">
                 <div class="cardarea">
-                    <h2 class="cardtitle">Specialty Drinks
-
-                    </h2>
+                  <h2 class="cardtitle">Specialty Drinks</h2>
+                  <!-- The information card will display the total specialty drinks count here -->
+                  <p id="specialtyDrinksCard">Total Specialty Drinks: 0</p>
+                </div>
+              </section>
+              <section class="areasect">
+                <div class="areacont">
+                    <h2 class="areatitle">From Los Angeles To San Diego</h2>
+                    <p class="areadesc">Our farm-to-table company sells organic produce sourced from Los Angeles to San Diego. 
+                        We are committed to sustainable farming practices and work closely with local farmers to deliver the freshest, 
+                        chemical-free fruits and vegetables. With efficient delivery, customers in San Diego can enjoy the true taste of nature 
+                        right at their doorstep. Embrace a healthier lifestyle with our hand-picked, organic bounty from Los Angeles.
+                    </p>
                 </div>
             </section>
         </div>
-        <section class="socialsect">
-            <div class="socialarea">
-                <nav class="socialnav">
-                        <a href="https://www.facebook.com" id="facebook"></a>
-                            <img src="img\facebook.png" alt="Facebook Icon">
-                        <a href="https://www.twitter.com" id="twitter"></a>
-                            <img src="img\twitter.png" alt="Twitter Icon">
-                        <a href="https://www.instagram.com" id="instagram">
-                            <img src="img\instagram.png" alt="Instagram Icon">
-                        
-                </nav>
-            </div>
-        </section>
     </main>
     <footer>
         <div class="footercont">
+            <section class="socialsect">
+                <div class="socialarea">
+                    <nav class="socialnav">
+                            <a href="https://www.facebook.com" id="facebook"></a>
+                                <img src="img\facebook.png" alt="Facebook Icon">
+                            <a href="https://www.twitter.com" id="twitter"></a>
+                                <img src="img\twitter.png" alt="Twitter Icon">
+                            <a href="https://www.instagram.com" id="instagram">
+                                <img src="img\instagram.png" alt="Instagram Icon">
+                            </a>
+                    </nav>
+                </div>
+            </section>
             <div class="copyright">
                 &#169 2023 .:|:. Chase Odermott .:|:. Idaho
             </div>
