@@ -176,12 +176,10 @@ footer p{
     align-items: center;
     text-align: center;
 }
-.orderform button{
-    display: flex;
-    width: 25%;
-    justify-content: center;
-}
 
+.orderform button :hover{
+  background-color: blue;
+}
 .form-field label {
     font-weight: bold;
     margin: auto;
@@ -270,7 +268,6 @@ footer p{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
 }
 
 /* Style the iframe to have a maximum width if desired */
