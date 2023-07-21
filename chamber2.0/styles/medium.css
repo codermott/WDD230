@@ -1,0 +1,92 @@
+/* Your existing styles for larger screens go here */
+
+/* Media Query for smaller screens between 585px and 800px */
+@media screen and (min-width: 585px) and (max-width: 800px) {
+    body {
+      /* Adjust the background color for smaller screens if needed */
+      background-color: #BED558;
+    }
+  
+    /* Override styles for header, footer, and grid layout */
+    header {
+      flex-direction: column;
+    }
+    .logo {
+      margin-bottom: 10px;
+    }
+    .headings {
+      display: block;
+      font-size: 25px;
+    }
+    h1 {
+      font-size: 30px !important;
+    }
+    h2 {
+      font-size: 25px !important;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 18px;
+    ;
+    }
+    .griditems {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto); /* Adjust the number of rows here */
+      grid-template-areas:
+        "a a a"
+        "b b b"
+        "c c c"
+        "d d d"
+        "e f f";
+      grid-gap: 10px;
+      margin-bottom: 10px;;
+    }
+    .events,
+    .heroimage,
+    .companyspotlights,
+    .weather,
+    .join,
+    .news {
+      width: 100%;
+      padding: 10px;
+    }
+    .eventtext p {
+      width: 100%;
+    }
+    .weathertile {
+      width: 100%;
+    }
+    .joinchmbr {
+      width: 100%;
+    }
+    .joindesc {
+      width: 50%;
+    }
+    .companyspotlights img {
+        width: 300px
+    }
+    
+    #primarynav {
+        display: none;
+      }
+      
+      /* Show the navigation when the hamburger button is clicked */
+      #primarynav.show {
+        display: block;
+        position: absolute;
+        top: 60px; /* Adjust the top position as needed */
+        left: 0;
+        background-color: #6D545D;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+      }
+    .spotlight2{
+        display: none;
+    }
+      
+  }
+  

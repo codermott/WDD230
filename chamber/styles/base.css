@@ -1,3 +1,9 @@
+body{
+  background-color: darkgrey;
+}
+.heroimage{
+  background-image: url("../img/citrus.jpg")
+}
 .discover{
   background-color: blanchedalmond;
 }
@@ -22,6 +28,11 @@ form {
   text-align: center;
   padding: 10px;
   margin;
+}
+.eventimg{
+  object-fit: cover;
+  width: 100% !important;
+  height: 100%;
 }
 input {
   width: 70%;

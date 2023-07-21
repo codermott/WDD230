@@ -1,0 +1,89 @@
+.directory-main {
+    text-align: center;
+    padding: 20px;
+}
+
+.directory-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-tile {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.card-tile h2 {
+    margin-bottom: 10px;
+}
+
+.card-tile em {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.card-tile p {
+    margin-bottom: 10px;
+}
+
+.card-tile img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-tile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.card-tile ul li {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .directory-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-tile {
+        width: 100%;
+    }
+}
+
+main {
+    background-color: blue;
+}
+.list-view .card-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-view .card-tile img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.list-view .card-tile h2 {
+    margin-bottom: 5px;
+}
+
+.list-view .card-tile em {
+    margin-bottom: 5px;
+}
+
+.list-view .card-tile p {
+    margin-bottom: 5px;
+}
+.card-tile h2, p{
+    color: black !important;
+}

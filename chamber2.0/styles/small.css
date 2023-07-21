@@ -1,0 +1,71 @@
+@media screen and (max-width: 584px){
+    .griditems {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 10px;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g";
+    }
+        /* Hide the primary navigation by default */
+        #primarynav {
+          display: none;
+        }
+      
+        /* Show the navigation when the hamburger button is clicked */
+        #primarynav.show {
+          display: block;
+          position: absolute;
+          top: 60px; /* Adjust the top position as needed */
+          left: 0;
+          background-color: #6D545D;
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+        }
+      
+        /* Your new styles for this screen size */
+        nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        #hamburgerbtn {
+          margin-bottom: 10px;
+        }
+        #primarynav {
+          position: fixed;
+          top: 60px; /* Adjust the top position as needed */
+          left: 0;
+          background-color: #6D545D;
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+          margin: 0;
+        }
+        #primarynav li {
+          display: block;
+          padding: 8px 0;
+        }
+        h1 {
+            font-size: 25px !important;
+        }
+        h2 {
+            font-size: 20px!important;
+        }
+        h3{
+            font-size: 16px;
+        }
+        p {
+            font-size: 18px ;
+        }
+        .companyspotlights img{
+            width: 200px
+        }
+}

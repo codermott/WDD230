@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loading Example</title>
+    <link rel="stylesheet" href="styles\base.css">
+    <link rel="stylesheet" href="styles\medium.css">
+    <link rel="stylesheet" href="styles\large.css">
+    <link rel="stylesheet" href="styles\small.css">
+</head>
+<body class="discover">
+  <header>
+    <section class="headings">
+        <div class="logo"><img src="img\rexburgcoc.png" alt="logo" width="100px"></div>
+        <div class="names">
+            <h1 class="compname">Rexburg</h1>
+            <div class="comptitle">Chamber of Commerce</div>
+        </div>
+    </section>
+    <nav>
+        <ul id="primarynav">
+            <li><a href="Index.html">Home</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>     
+        </ul>
+        <button id="hamburgerbtn">&#9776</button>
+    </nav>
+</header>
+
+    <section class="current-time">
+        <div id="current-date"></div>
+        <div id="current-time"></div>
+    </section>
+    <h1 class="dtitle"> The Town of Rexburg</h1>
+  <div class="column">
+    <div class="image-wrapper">
+      <img src="img\rexburg 1.jpeg" alt="Placeholder Image" loading="lazy">
+    </div>
+    <div class="image-wrapper">
+      <img src="img/rexburg2.jpeg" alt="Placeholder Image" loading="lazy">
+    </div>
+    <div class="image-wrapper">
+      <img src="img/rexburg3.jpeg" alt="Placeholder Image" loading="lazy">
+    </div>
+    <div class="image-wrapper">
+      <img src="img/rexburg4.jpeg" alt="Placeholder Image" loading="lazy">
+    </div>
+    <div class="image-wrapper">
+      <img src="img/rexburg5.jpeg" alt="Placeholder Image" loading="lazy">
+    </div>
+  </div>
+  <footer>
+    <div class="footercomp">
+        <div class="footerlogo"><img src="img\rexburgcoc.png" alt="logo" width="100px"></div>
+            <div class="footernames">
+                <h1 class="footercompname">Rexburg</h1>
+                <p class="footercomptitle">Chamber of Commerce</p>
+            </div>
+    </div>
+        <div class="copyright">
+            &#169 2023 .:|:. Chase Odermott .:|:. Idaho
+        </div>
+        <p id="last-modified"></p>
+        
+</footer>
+
+
+<script src="script\script.js"></script>
+<script src="script\hamburger.js"></script>
+<script src="script\weather.js"></script>
+<script src="script\lazy.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles\base.css">
+    <link rel="stylesheet" href="styles\medium.css">
+    <link rel="stylesheet" href="styles\large.css">
+    <link rel="stylesheet" href="styles\small.css">
+</head>
+<body>
+    <header>
+        <section class="headings">
+            <div class="logo"><img src="img\rexburgcoc.png" alt="logo" width="100px"></div>
+            <div class="names">
+                <h1 class="compname">Rexburg</h1>
+                <div class="comptitle">Chamber of Commerce</div>
+            </div>
+        </section>
+        <nav>
+            <ul id="primarynav">
+                <li><a href="Index.html">Home</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>     
+            </ul>
+            <button id="hamburgerbtn">&#9776</button>
+        </nav>
+    </header>
+    <section class="current-time">
+        <div id="current-date"></div>
+        <div id="current-time"></div>
+    </section>
+    <main class="joinpg">
+        <h1 class="jointi">Join</h1>
+        <form method="get" action="thankyou.html">
+            <input type="text" name="first_name" placeholder="First Name" required><br><br>
+            <input type="text" name="last_name" placeholder="Last Name" required><br><br>
+            <input type="text" name="position_title" placeholder="Business Position Title" pattern="[A-Za-z\s-]{7,}"><br><br>
+            <input type="email" name="email" placeholder="Email" required><br><br>
+            <input type="tel" name="phone_number" placeholder="Cell Phone Number" required><br><br>
+            <input type="text" name="business_name" placeholder="Business Name/Title" required><br><br>
+            <select name="membership_level">
+              <option value="NP Membership">NP Membership</option>
+              <option value="Bronze Membership">Bronze Membership</option>
+              <option value="Silver Membership">Silver Membership</option>
+              <option value="Gold Membership">Gold Membership</option>
+            </select><br><br>
+            <textarea name="business_description" placeholder="Business Description"></textarea><br><br>
+            <input type="hidden" name="form_submission_time" value="">
+            <input type="submit" value="Submit">
+          </form>
+    </main>
+    <footer>
+        <div class="footercomp">
+            <div class="footerlogo"><img src="img\rexburgcoc.png" alt="logo" width="100px"></div>
+                <div class="footernames">
+                    <h1 class="footercompname">Rexburg</h1>
+                    <p class="footercomptitle">Chamber of Commerce</p>
+                </div>
+        </div>
+            <div class="copyright">
+                &#169 2023 .:|:. Chase Odermott .:|:. Idaho
+            </div>
+            <p id="last-modified"></p>
+            
+    </footer>
+    <script src="script\script.js"></script>
+    <script src="script\hamburger.js"></script>
+    <script src="script\weather.js"></script>
+</body>
+</html>
