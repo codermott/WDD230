@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles\base.css">
     <link rel="stylesheet" href="styles\medium.css">
     <link rel="stylesheet" href="styles\large.css">
+    <link rel="stylesheet" href="styles\small.css">
 </head>
 <body>
     <header>
@@ -26,8 +27,6 @@
                 <li><a href="join.html">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>     
             </ul>
-            <img class="social1" src="img\Screenshot 2023-05-13 213654.png" alt="logo 1">
-            <img class="social2" src="img\Screenshot 2023-05-13 213702.png" alt="logo 2">
             <button id="hamburgerbtn">&#9776</button>
         </nav>
     </header>
@@ -43,14 +42,15 @@
                     <h1 class="herotitle">Welcome to Rexburg</h1>
                 </section>
                 <section class="news">
-                    <h2 class="newstitle">News Release</h2>
-                    <p class="newsdesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2 class="newstitle">Breaking News: Catastrophic Flood Strikes</h2>
+                    <p class="newsdesc">A devastating flood has hit [City Name], leaving thousands displaced and causing widespread damage. Emergency services are working tirelessly to rescue those in distress and provide aid, but challenges persist due to rising waters and power outages. Evacuation orders are in place for high-risk areas, and international aid is being mobilized. Tragically, casualties and missing persons have been reported, and the flood's economic impact is substantial. As the situation unfolds, authorities urge residents to prioritize safety and heed official advisories. The disaster highlights the urgency for disaster preparedness and climate change measures.</p>
                 </section>
                 <section class="events">
-                    <img class="event img" src="img/fireworks.jpg" alt="fireworks" loading="lazy" width="200px">
-                    <h2 class="eventtitle">Firework Show</h2>
-                    <h3 class="eventlocal">Porter Park</h3>
-                    <p class="eventdesc">Come join us at porter park for the 4th of July! Activities start at 3pm. Firework show will begen as the sun sets. Bring family and friend to the great event</p>
+                    <div class="eventtext">
+                        <h2 class="eventtitle">Firework Show</h2>
+                        <h3 class="eventlocal">Porter Park</h3>
+                        <p class="eventdesc">Come join us at porter park for the 4th of July! Activities start at 3pm. Firework show will begen as the sun sets. Bring family and friend to the great event</p>
+                    </div>
                 </section>
                 <section class="weather">
                     <h2 class="weathertitle1">Weather</h2>
@@ -83,9 +83,8 @@
                         <p class="spotlight2contact">contact@codeprimera.com 999-999-9999 | Website</p>
                     </div>
                     <div class="spotlight3">
-                        <h2 class="spotlight2title">Code Primera</h2>
-                        <img class="primeraphoto" src="img\Untitled-2-02.png">
-                        <h3 class="spotlight2desc">An after school coding instructional program.</h3>
+                        <h2 class="spotlight2title">Broulims</h2>
+                        <h3 class="spotlight2desc">Local grocery store to meet your needs. </h3>
                         <p class="spotlight2contact">contact@codeprimera.com 999-999-9999 | Website</p>
                     </div>
                     </div>
@@ -97,8 +96,10 @@
     <footer>
         <div class="footercomp">
             <div class="footerlogo"><img src="img\rexburgcoc.png" alt="logo" width="100px"></div>
-            <h1 class="footercompname">Rexburg</h1>
-            <div class="footercomptitle">Chamber of Commerce</div>
+                <div class="footernames">
+                    <h1 class="footercompname">Rexburg</h1>
+                    <p class="footercomptitle">Chamber of Commerce</p>
+                </div>
         </div>
             <div class="copyright">
                 &#169 2023 .:|:. Chase Odermott .:|:. Idaho
@@ -106,7 +107,9 @@
             <p id="last-modified"></p>
             
     </footer>
-    <script src="scripts\script.js"></script>
+    <script src="script\script.js"></script>
+    <script src="script\hamburger.js"></script>
+    <script src="script\weather.js"></script>
     
 </body>
 </html>

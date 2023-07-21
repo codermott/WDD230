@@ -1,239 +1,91 @@
-@media screen and (min-width:585px) and (max-width: 800px) { 
+/* Your existing styles for larger screens go here */
+
+/* Media Query for smaller screens between 585px and 800px */
+@media screen and (min-width: 585px) and (max-width: 800px) {
+  body {
+    /* Adjust the background color for smaller screens if needed */
+    background-color: #BED558;
+  }
+
+  /* Override styles for header, footer, and grid layout */
   header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: coral;
-            padding: 10px;
-            
-        }
-        
-        .headings {
-            display: flex;
-            align-items: center;
-        }
-        
-        .compname {
-            margin-bottom: -4px;
-        }
-        
-        .comptitle {
-            font-size: 0.8rem;
-            margin-top: 0;
-        }
-        .social1,
-        .social2 {
-        height: 30px;
-        margin-right: 10px;
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .headings {
+    display: block;
+    font-size: 25px;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 25px !important;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 18px;
+  ;
+  }
+  .griditems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto); /* Adjust the number of rows here */
+    grid-template-areas:
+      "a a a"
+      "b b b"
+      "c c c"
+      "d d d"
+      "e f f";
+    grid-gap: 10px;
+    margin-bottom: 10px;;
+  }
+  .events,
+  .heroimage,
+  .companyspotlights,
+  .weather,
+  .join,
+  .news {
+    width: 100%;
+    padding: 10px;
+  }
+  .eventtext p {
+    width: 100%;
+  }
+  .weathertile {
+    width: 100%;
+  }
+  .joinchmbr {
+    width: 100%;
+  }
+  .joindesc {
+    width: 50%;
+  }
+  .companyspotlights img {
+      width: 300px
+  }
+  
+  #primarynav {
+      display: none;
     }
-        
-        nav button {
-            margin: .2rem 2vw;
-            background: transparent;
-            border: none;
-            font-size: 2rem;
-            color: #a76464;
-            float: right;
-        }
-        
-        nav ul#primarynav {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li a {
-            display: block;
-            padding: .8rem 2vw;
-            text-decoration: none;
-            color: #333;
-            border-top: 1px solid rgba(0, 0, 0, .5);
-        }
-        nav ul li.active a {
-            background-color: rgba(0, 0, 0, .2);
-            color: white;
-        }
-        nav ul li a:hover {
-            background-color: rgba(0, 0, 0, .3);
-        }
-         nav ul {display: none;} 
-        
-         nav ul.open {display: block;
-            background-color: white;
-        } 
-        
-    .griditems {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-areas: 
-        "a a a"
-        "b b b"
-        "c c c"
-        "d d d"
-        "e e f";
-        grid-gap: 10px;
-        margin-bottom: 10px;
-    }
-    .heroimage {
-        position: relative;
-        text-align: center;
-        grid-area: a;
-        border: 2px solid black;
-        
-    }
-    .news {
-        text-align: center;
-       background-color: black;
-        grid-area: b;
-        border: 2px solid black;
-      
-    }
-    .events {
-        text-align: center;
-        background-color: blue;
-        grid-area: e;
-        border: 2px solid black;
- 
-    }
-    .weather {
-        text-align: center;
-        background-color: blue;
-        grid-area: f;
-        border: 2px solid black;
     
+    /* Show the navigation when the hamburger button is clicked */
+    #primarynav.show {
+      display: block;
+      position: absolute;
+      top: 60px; /* Adjust the top position as needed */
+      left: 0;
+      background-color: #6D545D;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
     }
-    .join {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center;
-        background-color: blue;
-        grid-area: d;
-        border: 2px solid black;
-        padding: 10px;
-      
-    }
-    .companyspotlights {
-        background-color: blue;
-        grid-area: c;
-        border: 2px solid black;
-        padding: 5px;
-        display: flex;
-        justify-content: space-between;
-        
-        
-    }
-      
-      .spotlight1 {
-        text-align: center;
-        background-color: purple;
-        flex-grow: 1;
-        border: 2px solid black;
-       
-       
-      }
-      .spotlight2 {
-        text-align: center;
-        background-color: purple;
-        flex-grow: 1;
-        border: 2px solid black;
-       
-        
-      }
-      .spotlight3 {
-        text-align: center;
-        background-color: purple;
-        flex-grow: 1;
-        border: 2px solid black;
-      
-        
-      }
-      .joinchmbr {
-        height: 40px;
-        width: 90%;
-        background-color: green;
-        text-align: center;
-        border-radius: 25px;
-      }
-      .herotitle {
-        position: absolute; 
-        top: 0; 
-        left: 0;
-        margin-left: 20px;
-      }
-      .heroimg{
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover;
-        margin: 0;
-      }
-      .joinbutton {
-        position: absolute; 
-        bottom: 0; 
-        right: 0;
-        height: 25%;
-        border-radius: 25px;
-        background-color: green;
-        width: 50%;
-        height: 10%;
-        margin-right: 20px;
-        margin-bottom: 20px;
-      }
-      .transportimg {
-        width: 50%;
-      }
-      .primeraphoto{
-        width: 50%;
-      }
-      h2{
-        color:yellow;
-      }
-      h3 {
-        color: white
-      }
-      h4 {
-        color: white;
-      }
-      p {
-        color:white
-      }
-      .weather {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center;
-      }
-      .temp, .weathertype{
-        display: flex;
-        align-items: right;
-      }
-      .windspeed, .windchill {
-        display: flex; 
-        align-items: left;
-
-      }
-      .windspeed {
-        border-top: 1px solid white;
-      }
-      footer {
-        margin-top: 20px;
-        border-radius: 10px;
-        background-color: blueviolet;
-        box-shadow: 0px 0px 20px 0px #000000;
-        padding: 10px;
-      }
-      .footerlogo{
-        margin-bottom: -30px;
-      }
-      .footercompname {
-        margin-bottom: 0px;
-      }
+  .spotlight2{
+      display: none;
+  }
+    
 }
-
- 
-
-
-
-
-
-

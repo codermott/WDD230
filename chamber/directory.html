@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles\base.css">
     <link rel="stylesheet" href="styles\medium.css">
     <link rel="stylesheet" href="styles\large.css">
+    <link rel="stylesheet" href="styles\small.css">
     <link rel="stylesheet" type="text/css" href="styles\directory.css">
 </head>
 <body>
@@ -23,10 +24,9 @@
                 <li><a href="Index.html">Home</a></li>
                 <li class="active"><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>    
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>     
             </ul>
-            <img class="social1" src="img\Screenshot 2023-05-13 213654.png" alt="logo 1">
-            <img class="social2" src="img\Screenshot 2023-05-13 213702.png" alt="logo 2">
             <button id="hamburgerbtn">&#9776</button>
         </nav>
     </header>
@@ -136,15 +136,21 @@
         
     </main>
     <footer>
-        <div class="logo"><img src="img\rexburgcoc.png" alt="logo" width="100px"></div>
-        <h1 class="compname">Rexburg</h1>
-        <div class="comptitle">Chamber of Commerce</div>
-        <div class="copyright">
-            &#169 2023 .:|:. Chase Odermott .:|:. Idaho
+        <div class="footercomp">
+            <div class="footerlogo"><img src="img\rexburgcoc.png" alt="logo" width="100px"></div>
+                <div class="footernames">
+                    <h1 class="footercompname">Rexburg</h1>
+                    <p class="footercomptitle">Chamber of Commerce</p>
+                </div>
         </div>
-        <p id="last-modified"></p>
-        <script src="scripts\script.js"></script>
-        <script src="scripts\directory.js"></script>
+            <div class="copyright">
+                &#169 2023 .:|:. Chase Odermott .:|:. Idaho
+            </div>
+            <p id="last-modified"></p>
+            
     </footer>
+    <script src="script\script.js"></script>
+    <script src="script\hamburger.js"></script>
+    <script src="script\weather.js"></script>
 </body>
 </html>

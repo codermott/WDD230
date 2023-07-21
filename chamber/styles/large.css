@@ -1,206 +1,61 @@
-@media screen and (min-width: 801px) {
-  header {
-        display: flex;
-        align-items: center;
-        background-color: coral;
-        padding: 10px;
-    }
-    .headings {
-        display: flex;
-        align-items: center;
-    }
-    .compname {
-        margin-bottom: -3px;
-    }
+@media screen and (min-width: 801px){
+  .griditems {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "a b b c"
+    "d b b c"
+    "e f f c";
     
-    nav {
-
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    
-    #primarynav {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    #primarynav li {
-        margin-right: 20px;
-    }
-    
-    .social1,
-    .social2 {
-        height: 30px;
-        margin-right: 10px;
-    }
-    
-    #hamburgerbtn {
-        display: none;
-    }
-
-    .griditems {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 10px;
-        grid-template-areas: 
-        "a b b c"
-        "d b b c"
-        "e f f c";
-        
-    }
-    nav ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-    }
-    .heroimage {
-        background-image: url("img\fireworks.jpg") ;
-        background-size: cover;
-        text-align: center;
-        grid-area: b;
-        border: 2px solid black;
-    }
-    .news {
-        text-align: center;
-       background-color: blue;
-        grid-area: f;
-        border: 2px solid black;
-        padding: 20px;
-    }
-    .events {
-        text-align: center;
-        background-color: blue;
-        grid-area: a;
-        border: 2px solid black;
-        padding: 20px;
-    }
-    .weather {
-        text-align: center;
-        background-color: blue;
-        grid-area: d;
-        border: 2px solid black;
-    }
-    .join {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center;
-        background-color: blue;
-        grid-area: e;
-        border: 2px solid black;
-        padding: 20px;
-    }
-    .companyspotlights {
-        background-color: blue;
-        grid-area: c;
-        border: 2px solid black;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-    }
-      
-    .spotlight1 {
-        text-align: center;
-        background-color: purple;
-        border: 2px solid black;
-        flex: 1;
-    }
-      
-    .spotlight2 {
-        text-align: center;
-        background-color: purple;
-        border: 2px solid black;
-        flex: 1;
-    }
-    .spotlight3 {
-      text-align: center;
-      background-color: purple;
-      border: 2px solid black;
-      flex: 1;}
-      
-    .joinchmbr {
-        height: 40px;
-        width: 90%;
-        background-color: green;
-        text-align: center;
-        border-radius: 25px;
-      }
- 
-      .joinbutton {
-        position: absolute; 
-        bottom: 0; 
-        right: 0;
-        height: 25%;
-        border-radius: 25px;
-        background-color: green;
-        width: 50%;
-        height: 10%;
-        margin-right: 20px;
-        margin-bottom: 20px;
-      }
-      .joindesc{
-        margin: 10px;
-      }
-      .transportimg {
-        width: 50%;
-      }
-      .primeraphoto{
-        width: 50%;
-      }
-      h2{
-        color:yellow;
-      }
-      h3 {
-        color: white
-      }
-      h4 {
-        color: white;
-      }
-      p {
-        color:white
-      }
-      .weather {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center;
-      }
-      .temp, .weathertype{
-        display: flex;
-        align-items: right;
-      }
-      .windspeed, .windchill {
-        display: flex; 
-        align-items: left;
-
-      }
-      .windspeed {
-        border-top: 1px solid white;
-      }
-      .spotlight1contact{
-        border-top: 1px solid white;
-      }
-      .spotlight2contact{
-        border-top: 1px solid white;
-      }
-      footer {
-        margin-top: 20px;
-        border-radius: 10px;
-        background-color: blueviolet;
-        box-shadow: 0px 0px 20px 0px #000000;
-        padding: 10px;
-      }
-      .footerlogo{
-        margin-bottom: -30px;
-      }
-      .footercompname {
-        margin-bottom: 0px;
-      }
-      
 }
- 
+.events {
+  grid-area: a;
+}
+.heroimage {
+  grid-area: b;
+}
+.companyspotlights {
+  grid-area: c;
+}
+.weather {
+  grid-area: d;
+}
+.join {
+  grid-area: e;
+}
+header {
+  align-items: flex-end;
+}
+.news {
+  grid-area: f;
+}
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  
+}
+
+/* Horizontal menu styles */
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333; /* Change color as needed */
+}
+#hamburgerbtn{ display: none;}
+}
+.joinpg input {
+  width: 500px;
+}
