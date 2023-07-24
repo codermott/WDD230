@@ -10,14 +10,18 @@ header {
   
 }
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #6D545D;
+  color: white;
+}
+.flex-containerfooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-top: 10px;
   padding: 20px;
   text-align: center;
   color: white;
+  justify-content: space-around;
 }
 .footercomp {
   display:flex;
@@ -35,8 +39,18 @@ footer {
 }
 .footercomptitle {
   margin: 0px;
+  color: white !important;
 
 }
+.copyright {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+#last-modified{
+  color: white !important;
+}
+
 .headings {
   display:flex;
 }
@@ -55,7 +69,7 @@ footer {
 .griditems {
   text-align: center;
 }
-.events, .heroimage, .companyspotlights, .weather, .join, .news {
+.heroimage, .companyspotlights, .weather, .join, .news {
   border: 2px solid black;
   background-color: #8B9556;
 }
@@ -68,8 +82,9 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-.eventtext {
+.eventtitle, .eventlocal {
   background-color: #8B9556;
+  margin: 0;
 }
 .eventtext p {
   background-color: #ABB557;
@@ -84,19 +99,30 @@ footer {
   display: flex;
   grid-area: b;
   flex-direction: column;
+  justify-content: space-around;
 }
 .companyspotlights {
   display: flex;
   grid-area: c;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px;
+  
+ 
 }
 .companyspotlights img {
   width: 75%;
 }
 .spotlight1, .spotlight2, .spotlight3 {
   border: 2px solid black;
+
 }
+.spotlight1contact, .spotlight2contact, .spotlight3contact{
+  border-top: 2px solid black;
+  background-color: #ABB557;
+  margin:0px
+}
+
 .weather {
   display: flex;
   grid-area: d;
@@ -187,7 +213,70 @@ p {
  padding: 25%;
 
 }
-.column{
-display: flex;
-    flex-direction: column;
-    align-items: center; }
+.copyright{
+  border-top: 2px solid white;
+}
+    #last-modified {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.thankcont{
+  display: flex;
+
+}
+.thankyoudesc {
+  margin: auto;
+}
+.img-wrapper {
+  display: flex;
+}
+.discovermain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: #ABB557;
+
+}
+.column img{
+  width: 100%;
+  
+}
+.column  h2 {
+  text-align: center;
+  background-color: #756D54;
+  margin-bottom: 0;
+}
+.footer1 {
+  display: flex;
+  flex-direction: column;
+
+}
+.joinpg form {
+  width: 80%;
+  margin: auto;
+  max-width: 1300px;
+  margin: 20px;
+}
+
+/* Adjust the input fields */
+.joinpg form input,
+.joinpg form select,
+.joinpg form textarea {
+  width: 100%;
+}
+
+/* Adjust the submit button */
+.joinpg form input[type="submit"] {
+  width: 100%;
+  margin-top: 10px;
+  
+}

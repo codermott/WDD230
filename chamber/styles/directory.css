@@ -1,89 +1,75 @@
 .directory-main {
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    background-color: #8B9556;
+    padding: 3%;
+    flex-direction: column;
+    align-items: center;
 }
 
 .directory-wrapper {
+    align-items: center;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    padding: 5%;
 }
 
-.card-tile {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    width: 300px;
+.directory-wrapper div {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3%;
+    border: solid 1px #2E2B40;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
 }
 
-.card-tile h2 {
-    margin-bottom: 10px;
+.directory-wrapper img {
+    border: solid 1px #2E2B40;
+    display: block;
+    margin: auto;
+    max-width: 200px;
 }
 
-.card-tile em {
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.card-tile p {
-    margin-bottom: 10px;
-}
-
-.card-tile img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.card-tile ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-
-.card-tile ul li {
-    margin-bottom: 5px;
-}
-
-@media screen and (max-width: 768px) {
-    .directory-wrapper {
+.directory-wrapper ul {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
-    }
-
-    .card-tile {
-        width: 100%;
-    }
 }
 
-main {
-    background-color: blue;
+.card-list div {
+    width: 100%;
+    text-align: center;
 }
-.list-view .card-tile {
+
+.card-list img, .card-list em, .card-list a, .card-list ul, .card-list p {
+    display: none;
+}
+
+.contact-page-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.list-view .card-tile img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
+.contact-form-wrapper, .contact-form {
+    padding: 5%;
+    width: 80%;
 }
 
-.list-view .card-tile h2 {
-    margin-bottom: 5px;
+.contact-form textarea, input, label {
+    display: block;
+    margin-top: 2%;
 }
 
-.list-view .card-tile em {
-    margin-bottom: 5px;
+.contact-form textarea {
+    min-width: 40px;
+    width: 80%;
 }
 
-.list-view .card-tile p {
-    margin-bottom: 5px;
-}
-.card-tile h2, p{
-    color: black !important;
+.contact-form button {
+    margin-top: 3%;
+    width: 33%;
 }

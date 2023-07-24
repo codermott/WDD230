@@ -1,16 +1,114 @@
 {
-    "businesses":
-    [
-        {
-            "name":"   ",
-            "address":"   ",
-            "contactPerson": "   ",
-            "phonenumber":"   ",
-            "url": "   ",
-            "image": "  ",
-            "membershipLevel": "silver",
-            "businessType": "   ",
-            "EstIn": "   "
-        }
+    "businesses": [
+      {
+        "name": "Broulim's Supermarket",
+        "foundingDate": "1922",
+        "businessType": "Grocery Store",
+        "businessAddress": "124 W Main St, Rexburg, ID 83440",
+        "contactPerson": "Customer Service",
+        "phone": "(208) 356-3770",
+        "website": "https://www.broulims.com/",
+        "membershipLevel": "Premium",
+        "image": "broulims.png"
+      },
+      {
+        "name": "Walmart Supercenter",
+        "foundingDate": "1962",
+        "businessType": "Retail Store",
+        "businessAddress": "1450 N 2nd E St, Rexburg, ID 83440",
+        "contactPerson": "Customer Services",
+        "phone": "(208) 356-4563",
+        "website": "https://www.walmart.com/",
+        "membershipLevel": "Standard",
+        "image": "walmart.png"
+      },
+      {
+        "name": "Ostorházi Bevonattechnika Kft.",
+        "foundingDate": "1991",
+        "businessType": "Domestic Airbrushing Service",
+        "businessAddress": "Százhalombatta, Iparos u. 13, 2440",
+        "contactPerson": "Miklos",
+        "phone": "(06 23) 521 100",
+        "website": "",
+        "membershipLevel": "Standard",
+        "image": "ostorhazi.png"
+      },
+      {
+        "name": "The Craze Fun Zone",
+        "foundingDate": "N/A",
+        "businessType": "Family Entertainment Center",
+        "businessAddress": "2001 S Ashment Ave, Rexburg, ID 83440",
+        "contactPerson": "N/A",
+        "phone": "N/A",
+        "website": "",
+        "membershipLevel": "Basic",
+        "image": "craze.png"
+      },
+      {
+        "name": "Porter Park",
+        "foundingDate": "N/A",
+        "businessType": "Park and Recreation Area",
+        "businessAddress": "Százhalombatta, Iparos u. 13, 2440",
+        "contactPerson": "N/A",
+        "phone": "(06 23) 521 100",
+        "website": "",
+        "membershipLevel": "Basic",
+        "image": "porter_park.png"
+      },
+      {
+        "name": "FatCats Rexburg",
+        "foundingDate": "N/A",
+        "businessType": "Entertainment Center (Bowling, Arcade, etc.)",
+        "businessAddress": "216 S 2nd W, Rexburg, ID 83440",
+        "contactPerson": "General Inquiries",
+        "phone": "(208) 356-8840",
+        "website": "",
+        "membershipLevel": "Standard",
+        "image": "fatcats.png"
+      },
+      {
+        "name": "The Romance Theater",
+        "foundingDate": "N/A",
+        "businessType": "Movie Theater and Event Venue",
+        "businessAddress": "2 E Main St, Rexburg, ID 83440",
+        "contactPerson": "N/A",
+        "phone": "(208) 356-7770",
+        "website": "",
+        "membershipLevel": "Basic",
+        "image": "romance_theater.png"
+      },
+      {
+        "name": "Chick-fil-A",
+        "foundingDate": "1967",
+        "businessType": "Fast-Food Restaurant",
+        "businessAddress": "469 N 2nd E, Rexburg, ID 83440",
+        "contactPerson": "Restaurant Manager",
+        "phone": "(208) 359-1808",
+        "website": "",
+        "membershipLevel": "Premium",
+        "image": "chickfila.png"
+      },
+      {
+        "name": "Broulim's Pharmacy",
+        "foundingDate": "1922",
+        "businessType": "Pharmacy and Health-Related Products",
+        "businessAddress": "124 W Main St, Rexburg, ID 83440",
+        "contactPerson": "Pharmacy Staff",
+        "phone": "(208) 356-6520",
+        "website": "https://www.broulims.com/pharmacy",
+        "membershipLevel": "Standard",
+        "image": "broulims_pharmacy.png"
+      },
+      {
+        "name": "BYU-Idaho University Store",
+        "foundingDate": "1888",
+        "businessType": "College Bookstore and Merchandise",
+        "businessAddress": "142 S 2nd W, Rexburg, ID 83460",
+        "contactPerson": "Store Manager",
+        "phone": "(208) 496-3400",
+        "website": "https://www.byui.edu/university-store",
+        "membershipLevel": "Premium",
+        "image": "byui_store.png"
+      }
     ]
-}
+  }

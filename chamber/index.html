@@ -30,16 +30,15 @@
             <button id="hamburgerbtn">&#9776</button>
         </nav>
     </header>
-    <section class="current-time">
-        <div id="current-date"></div>
-        <div id="current-time"></div>
-    </section>
     
     <main>
         <div class="container">
             <div class="griditems">
                 <section class="heroimage">
                     <h1 class="herotitle">Welcome to Rexburg</h1>
+                    <form action="join.html">
+                        <button class="joinchmbr" type="submit"><a href="join.html"></a>Join the Chamber</button>
+                        </form>
                 </section>
                 <section class="news">
                     <h2 class="newstitle">Breaking News: Catastrophic Flood Strikes</h2>
@@ -74,18 +73,18 @@
                         <h2 class="spotlight1title">Thankful Transport</h2>
                         <img class="transportimg" src="img\Untitled-1-01.png">
                         <h3 class="spotlight1desc">"We get it there for you!"</h3>
-                        <p class="spotlight1contact">hello@thankfultransport.com 999-999-9999 | Website</p>
+                        <p class="spotlight1contact">hello@thankfultransport.com 999-999-9999 |  www.website.com</p>
                     </div>
                     <div class="spotlight2">
                         <h2 class="spotlight2title">Code Primera</h2>
                         <img class="primeraphoto" src="img\Untitled-2-02.png">
                         <h3 class="spotlight2desc">An after school coding instructional program.</h3>
-                        <p class="spotlight2contact">contact@codeprimera.com 999-999-9999 | Website</p>
+                        <p class="spotlight2contact">contact@codeprimera.com 999-999-9999 |  www.website.com</p>
                     </div>
                     <div class="spotlight3">
                         <h2 class="spotlight2title">Broulims</h2>
                         <h3 class="spotlight2desc">Local grocery store to meet your needs. </h3>
-                        <p class="spotlight2contact">contact@codeprimera.com 999-999-9999 | Website</p>
+                        <p class="spotlight2contact">contact@codeprimera.com 999-999-9999 | www.website.com</p>
                     </div>
                     </div>
                 </section>
@@ -94,6 +93,8 @@
 
     </main>
     <footer>
+        <section class="flex-containerfooter">
+        <section class="footer1">
         <div class="footercomp">
             <div class="footerlogo"><img src="img\rexburgcoc.png" alt="logo" width="100px"></div>
                 <div class="footernames">
@@ -101,15 +102,28 @@
                     <p class="footercomptitle">Chamber of Commerce</p>
                 </div>
         </div>
-            <div class="copyright">
-                &#169 2023 .:|:. Chase Odermott .:|:. Idaho
+        
+        <div class="socalmedia">
+            <a href="https://www.facebook.com" title="facebook icons" target="_blank"><img class="facebook" src="img\facebook.png" width="50px"></a>
+            <a href="https://www.twitter.com" title="twitter social badge icons" target="_blank"><img class="twitter" src="img\twitter.png" width="50px"></a>
+            <a href="https://www.instagram.com" title="instagram icons" target="_blank"><img class="instagram" src="img\instagram.png" width="55px"></a>
+        </div>
+        </section>
+        <section class="footer2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5836.073683679243!2d-111.7917154040598!3d43.826238062912145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a515035ed5f%3A0x1f0ff829aca1e068!2sRexburg%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1629916493358!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        <div class="copyright">
             </div>
-            <p id="last-modified"></p>
+        </section>
+        </section>
+        
+        <div class="copyright">
+            &#169 2023 .:|:. Chase Odermott .:|:. Idaho 
+        <p id="last-modified"></p> </div>
+        
             
     </footer>
-    <script src="script\script.js"></script>
-    <script src="script\hamburger.js"></script>
-    <script src="script\weather.js"></script>
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
     
 </body>
 </html>

@@ -1,7 +1,72 @@
 /* Your existing styles for larger screens go here */
 
 /* Media Query for smaller screens between 585px and 800px */
-@media screen and (min-width: 585px) and (max-width: 800px) {
+@media screen and (min-width: 800px) and (max-width: 1116px){
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headings {
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .headings {
+    display: flex;
+    font-size: 25px;
+}
+#hamburgerbtn{display: none;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  
+}
+.griditems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+  grid-template-areas: 
+  "a b b c"
+  "d b b c"
+  "e f f c";
+  
+}
+.events {
+grid-area: a;
+}
+.heroimage {
+grid-area: b;
+}
+.companyspotlights {
+grid-area: c;
+}
+.weather {
+grid-area: d;
+}
+.join {
+grid-area: e;
+}
+.news {
+grid-area: f;
+}
+
+/* Horizontal menu styles */
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333; /* Change color as needed */
+}
+}
+@media screen and (min-width: 585px) and (max-width: 799px) {
   body {
     /* Adjust the background color for smaller screens if needed */
     background-color: #BED558;
@@ -9,7 +74,9 @@
 
   /* Override styles for header, footer, and grid layout */
   header {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
   }
   .logo {
     margin-bottom: 10px;
@@ -72,20 +139,30 @@
   #primarynav {
       display: none;
     }
+  #primarynav a {
+    color: black !important;
+  }
     
     /* Show the navigation when the hamburger button is clicked */
     #primarynav.show {
-      display: block;
+      display: flex;
+      justify-content: space-around;
       position: absolute;
-      top: 60px; /* Adjust the top position as needed */
+      top: 0px; /* Adjust the top position as needed */
       left: 0;
-      background-color: #6D545D;
+      background-color: #8B9556;
       width: 100%;
       text-align: center;
       padding: 10px;
+      margin: 0;
+      list-style: none;
     }
   .spotlight2{
       display: none;
   }
+    #hamburgerbtn {
+      width: 50px;
+      height: 50px;
+    }
     
 }
